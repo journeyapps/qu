@@ -62,7 +62,7 @@ task :unattended_spec do |t|
     FileUtils.rmtree(dir)
   }
 
-  40.downto(0) do |count|
+  400.downto(0) do |count|
     begin
       s = TCPSocket.new 'localhost', 5111
       s.close
